@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="prefetch" href="index.html">
+
+    <title>About Wendy</title>
+    <link rel="icon" type="image/x-icon" href="./assets/ufo.png">
+</head>
+
+<body>
+  <div id="main">
+    <nav class="navBar">
+      <ul class="navLinks">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="travels.html">My Travels</a></li>
+        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Resume</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="slide active">
+        <img src="./assets/plane1.png">
+        <div class="slide-text1">
+          <p>Hey, I'm Wendy!</p>
+          <p>I used to study finance/accounting at USYD before changing to finance/compsci at UNSW. I'm 2nd yr compsci and 4th yr overall</p>
+        </div>
+      </div>
+      <div class = "slide">
+        <img src="./assets/plane2.png">
+        <div class="slide-text2">
+          <p>I'm speed running my compsci course since I picked up the compsci degree in my third year. So far, I've done:</p>
+          <ul class="classList">
+            <li>Comp1511 - intro</li>
+            <li>Comp1521 - computer systems</li>
+            <li>Comp1531 - seng project</li>
+            <li>Comp2521 (did it over the summer it was brutal)</li>
+          </ul>
+          <p>This sem, I'll be completing:</p>
+          <ul class="classList">
+            <li>Comp6080 - frontend</li>
+            <li>Comp3311 - databases</li>
+          </ul>
+        </div>
+      </div>
+      <div class = "slide">
+        <img src="./assets/plane3.png">
+        <div class="slide-text3">
+          <p>On top of learning new things and building cool stuff, I hope to meet like-minded people and make lasting friendships</p>
+          <div class="smileyFace">
+            <img src="./assets/happy.png">
+          </div>
+        </div>
+      </div>
+
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+      <script src="script.js"></script>
+    </div>
+  </div>
+</body>

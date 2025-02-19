@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="prefetch" href="index.html">
+
+    <title>Travels</title>
+    <link rel="icon" href="./assets/ufo.png">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_J658FE1e07M5yqLWEGMp_Sd7rHUf1-E&callback=initMap&libraries=marker"></script>
+    <!-- TODO: Implement best practice contained in script below -->
+    <!-- <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB_J658FE1e07M5yqLWEGMp_Sd7rHUf1-E", v: "weekly"});</script> -->
+</head>
+
+<body>
+  <nav class="navBar">
+    <ul class="navLinks">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="travels.html">My Travels</a></li>
+      <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Resume</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <div id="map"></div>
+  <script src="script.js"></script>
+
+  <div id="mapCaption">
+    <p>Click on the markers to see pics of places I've been!</p>
+  </div>
+
+</body>
+</html>
